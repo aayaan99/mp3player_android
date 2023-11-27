@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scrollbars="vertical" />
+
+
+    <SeekBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:background="#6E6E6E"
+        android:thumbTint="@color/colorPrimary"
+        android:progressTint="@color/colorAccent"
+        android:backgroundTint="@color/colorSecondary"
+        android:splitTrack="false" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    android:text="Time:"
+    android:textColor="#000"
+    android:textSize="18sp"
+    android:fontFamily="sans-serif-medium" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+    android:text="Play"
+    android:textSize="14sp"
+    android:background="@drawable/rounded_button_play"
+    android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:gravity="center"
+        android:background="#F5F5F5"
+        android:textColor="#00111C"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="3dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+    android:text="Log"
+    android:textSize="12sp"
+    android:background="@drawable/less_rounded_button_log" />
+</GridLayout>
